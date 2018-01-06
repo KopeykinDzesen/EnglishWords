@@ -35,7 +35,7 @@ def show_history():
     history.delete("1.0", END)
     length = len(gen.word_history)
     for i in range(length):
-        stroka = "{} : {}\n".format(gen.word_history[length-i-1], gen.answer_history[length-i-1])
+        stroka = "{} : {}\n".format(gen.word_history[length - i - 1], gen.answer_history[length - i - 1])
         history.insert(END, stroka)
 
 
@@ -74,5 +74,3 @@ gen.fill_chance()
 gen.fill_history()
 
 root.mainloop()
-
-

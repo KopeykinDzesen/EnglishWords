@@ -69,7 +69,7 @@ def save_history():
     print(answer_history)
     lenght = len(word_history)
     if lenght > 50:
-        word_history = word_history[lenght-50:]
-        answer_history = answer_history[lenght-50:]
+        word_history = word_history[lenght - 50:]
+        answer_history = answer_history[lenght - 50:]
     for i in range(lenght):
         history.write("{}:{}_".format(word_history[i], str(answer_history[i])))
