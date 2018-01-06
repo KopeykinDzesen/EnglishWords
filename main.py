@@ -11,7 +11,7 @@ def check_word():
         label["text"] = "{} - {}".format(word, gen.dict_of_words[word])
         gen.word_history.append(label["text"])
         gen.answer_history.append("True")
-        if gen.dict_of_chance[word] > 1:
+        if int(gen.dict_of_chance[word]) > 1:
             gen.dict_of_chance[word] = int(gen.dict_of_chance[word]) - 1
             gen.count_of_chance = int(gen.count_of_chance) - 1
     else:
